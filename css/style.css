@@ -1,0 +1,241 @@
+:root {
+  --basic-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --basic-white-color: #ffffff;
+  --bcg-color-dark: #2f303a;
+  --bcg-color-white: #f5f5f5;
+  --bcg-color-gray: #f5f4fa;
+  --total-black: #000000;
+  --link-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--basic-white-color);
+  color: var(--basic-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-black {
+  color: var(--total-black);
+}
+.logo-white {
+  color: var(--basic-white-color);
+}
+
+.logo:hover,
+.logo-black:hover,
+.logo-white:hover {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+
+.site-nav .link {
+  color: var(--basic-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--second-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--bcg-color-dark);
+}
+
+.hero-title {
+  color: var(--basic-white-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 16;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--basic-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--basic-white-color);
+  color: var(--total-black);
+}
+
+/* Feature */
+
+/* .feature {}*/
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.feature-text {
+  color: var(--second-text-color);
+  line-height: 1.71;
+}
+
+/* Work */
+
+/* .work {} */
+
+.work-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Team */
+
+.team {
+  background-color: var(--bcg-color-gray);
+}
+
+.team-box {
+  background-color: var(--basic-white-color);
+}
+
+.team-box-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-text {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Footer */
+
+.contacts {
+  background-color: var(--bcg-color-dark);
+}
+
+.contacts-link-map {
+  color: var(--basic-white-color);
+}
+
+.contacts-link {
+  color: var(--link-color);
+}
+.contacts .font {
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contacts-link-map:hover,
+.contacts-link:hover {
+  color: var(--accent-color);
+}
+
+/* Portfolio */
+
+/* Example */
+.vexample {
+  background-color: var(--bcg-color-white);
+}
+
+.menu-button.current {
+  background-color: var(--accent-color);
+  color: var(--basic-white-color);
+}
+
+.menu-button {
+  background-color: var(--bcg-color-gray);
+  color: var(--basic-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--accent-color);
+  color: var(--basic-white-color);
+}
+
+.example-box {
+  background-color: var(--basic-white-color);
+}
+
+.example-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-text {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
