@@ -17,10 +17,28 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.14;
+
+  /* position: absolute; */
+
 }
 
+/* h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  
+} */
+
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
 }
 
 .logo {
@@ -30,6 +48,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  margin: 0;
 }
 
 .logo-black {
@@ -44,6 +63,7 @@ body {
 .logo-white:hover {
   color: var(--accent-color);
 }
+
 
 /* Site nav */
 
@@ -79,6 +99,7 @@ body {
 
 .hero {
   background-color: var(--bcg-color-dark);
+  text-align: center;
 }
 
 .hero-title {
@@ -89,6 +110,13 @@ body {
   line-height: 16;
   text-align: center;
   letter-spacing: 0.06em;
+
+  margin: 0;
+  margin-bottom: 30px;
+  
+  
+  
+ 
 }
 
 .hero-button {
@@ -100,6 +128,14 @@ body {
   letter-spacing: 0.06em;
   font-family: Roboto, sans-serif;
   cursor: pointer;
+
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  /* min-width: 130px; */
+  
 }
 
 .hero-button:hover,
@@ -110,16 +146,22 @@ body {
 
 /* Feature */
 
-/* .feature {}*/
+/* .feature {
+  
+} */
 
 .feature-title {
+  
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
 }
 
 .feature-text {
   color: var(--second-text-color);
   line-height: 1.71;
+  margin: 0;
+  
 }
 
 /* Work */
@@ -132,6 +174,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin: 0;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 /* Team */
@@ -149,6 +194,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin: 0;
 }
 
 .team-text {
@@ -156,6 +202,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin: 0;
 }
 
 /* Footer */
