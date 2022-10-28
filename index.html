@@ -20,24 +20,27 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <div class="container header">
+        <nav class="main-nav">
           <a href="./index.html" class="logo" lang="en"
             >Web<span class="logo-black">Studio</span></a
           >
           <ul class="site-nav list">
-            <li><a href="" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="" class="link current">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
+
         <ul class="auth-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -45,13 +48,11 @@
     </header>
 
     <main>
-      <!--Шапка-->
+      <!--Hero-->
 
-      <section class="hero">
-        
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
-        
+      <section class="hero container">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero-button">Замовити послугу</button>
       </section>
 
       <!--Особливості-->
@@ -59,32 +60,33 @@
         <!--Сховати-->
         <div class="container">
           <h2 class="feature-title visually-hidden">Особливості</h2>
-          <ul class="list">
-            <li>
+
+          <ul class="list feature-block">
+            <li class="feature-content">
               <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="feature-content">
               <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне
-                у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="feature-content">
               <h3 class="feature-title">ПЛАНУВАННЯ</h3>
               <p class="feature-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="feature-content">
               <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-text">
-                Значимість цих проблем настільки очевидна, що реалізація планових
-                завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -95,8 +97,8 @@
       <section class="work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
+          <ul class="list list-block">
+            <li class="block-img">
               <img
                 src="./images/work1.jpg"
                 alt="Візуальне зображення роботи"
@@ -104,7 +106,7 @@
                 height="297"
               />
             </li>
-            <li>
+            <li class="block-img">
               <img
                 src="./images/work2.jpg"
                 alt="Візуальне зображення роботи"
@@ -112,7 +114,7 @@
                 height="297"
               />
             </li>
-            <li>
+            <li class="block-img">
               <img
                 src="./images/work3.jpg"
                 alt="Візуальне зображення роботи"
@@ -126,48 +128,56 @@
 
       <!--Наша команда-->
       <section class="team">
-        <div class="container">
+        <div class="container team">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li class="team-box">
+          <ul class="list team-block">
+            <li class="team-box block-img">
               <img
                 src="./images/photo1.jpg"
                 alt="Фото співробітника"
                 width="270"
                 height="260"
               />
-              <h3 class="team-box-title">Ігор Дем'яненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
+              <div class="box-info">
+                <h3 class="team-box-title">Ігор Дем'яненко</h3>
+                <p lang="en" class="team-text">Product Designer</p>
+              </div>
             </li>
-            <li class="team-box">
+            <li class="team-box block-img">
               <img
                 src="./images/photo2.jpg"
                 alt="Фото співробітника"
                 width="270"
                 height="260"
               />
-              <h3 class="team-box-title">Ольга Рєпіна</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
+              <div class="box-info">
+                <h3 class="team-box-title">Ольга Рєпіна</h3>
+                <p lang="en" class="team-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-box">
+            <li class="team-box block-img">
               <img
                 src="./images/photo3.jpg"
                 alt="Фото співробітника"
                 width="270"
                 height="260"
               />
-              <h3 class="team-box-title">Микола Тарасов</h3>
-              <p lang="en" class="team-text">Marketing</p>
+              <div class="box-info">
+                <h3 class="team-box-title">Микола Тарасов</h3>
+                <p lang="en" class="team-text">Marketing</p>
+              </div>
             </li>
-            <li class="team-box">
+            <li class="team-box block-img">
               <img
                 src="./images/photo4.jpg"
                 alt="Фото співробітника"
                 width="270"
                 height="260"
               />
-              <h3 class="team-box-title">Михайло Єрмаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
+              <div class="box-info">
+                <h3 class="team-box-title">Михайло Єрмаков</h3>
+                <p lang="en" class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -175,14 +185,16 @@
     </main>
 
     <footer class="contacts">
-      <div class="container">
-      <a href="" class="logo footer" lang="en"
-        >Web<span class="logo-white">Studio</span></a
-      >
-      <address>
-        
+      <div class="container logo-box">
+        <div class="logo-block">
+          <a href="" class="logo footer" lang="en"
+            >Web<span class="logo-white">Studio</span></a
+          >
+        </div>
+
+        <address>
           <ul class="list">
-            <li>
+            <li class="link-box">
               <a
                 class="contacts-link-map font"
                 href="https://goo.gl/maps/Nbyd7draAB5cvBSi6"
@@ -191,19 +203,19 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="link-box">
               <a class="contacts-link font" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="link-box">
               <a class="contacts-link font" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </div>
-      </address>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
