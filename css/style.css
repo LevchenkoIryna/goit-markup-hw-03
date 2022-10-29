@@ -19,10 +19,15 @@ body {
   line-height: 1.14;
 }
 
-/* h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  
-} */
+}
 
 .list {
   margin: 0;
@@ -40,9 +45,12 @@ body {
   /* outline: 2px solid tomato; */
 }
 
-.logo {
-  margin: 0;
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.logo {
   color: var(--accent-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -132,6 +140,7 @@ body {
 .hero {
   background-color: var(--bcg-color-dark);
   text-align: center;
+  padding: 0;
 }
 
 .hero-title {
@@ -143,8 +152,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   line-height: 60px;
-
-  margin: 0;
 
   margin-bottom: 30px;
   padding-top: 200px;
@@ -167,7 +174,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   margin-bottom: 200px;
-  /* min-width: 130px; */
+  min-width: 216px;
 }
 
 .hero-button:hover,
@@ -178,13 +185,13 @@ body {
 
 /* Feature */
 
+.feature {
+  padding-bottom: 0;
+}
+
 .feature-block {
   display: flex;
   flex-wrap: wrap;
-}
-
-.feature-content {
-  margin-top: 94px;
 }
 
 .feature-content:not(:last-child) {
@@ -193,13 +200,11 @@ body {
 
 .feature-title {
   font-weight: 700;
-  margin: 0;
 }
 
 .feature-text {
   color: var(--second-text-color);
   line-height: 1.71;
-  margin: 0;
   width: 270px;
   margin-top: 10px;
 }
@@ -214,9 +219,6 @@ body {
 .block-img:not(:last-child) {
   margin-right: 30px;
 }
-.block-img {
-  margin-bottom: 94px;
-}
 
 .work-title,
 .team-title {
@@ -224,8 +226,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin: 0;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -246,12 +246,13 @@ body {
   margin-right: 30px;
 }
 
-.container.team {
+.team {
   background-color: var(--bcg-color-gray);
 }
 
 .team-box {
   background-color: var(--basic-white-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-box-title {
@@ -259,7 +260,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin: 0;
 }
 
 .team-text {
@@ -267,7 +267,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin: 0;
   margin-top: 10px;
 }
 
@@ -283,10 +282,6 @@ body {
   margin-bottom: 20px;
 }
 
-.link-box {
-  margin: 0;
-}
-
 .link-box:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -299,7 +294,7 @@ body {
   color: var(--link-color);
 }
 .contacts .font {
-  line-height: 1.71;
+  line-height: 1.5;
   text-decoration: none;
   font-style: normal;
 }
@@ -318,7 +313,6 @@ body {
   gap: 8px;
 
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 56px;
 }
 
@@ -326,7 +320,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
+}
+
+.example-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .border {
@@ -358,8 +357,10 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: var(--bcg-color-gray);
-  padding-right: 22px;
   padding-left: 22px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
 }
 
 .menu-button:hover,
@@ -377,7 +378,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0;
   margin-bottom: 4px;
 }
 
@@ -385,7 +385,6 @@ body {
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 30px;
-  margin: 0;
 }
 
 .visually-hidden {
